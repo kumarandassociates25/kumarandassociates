@@ -1,3 +1,9 @@
+media:
+  input: src/media
+  output: /media
+  rename: safe
+  extensions: [png, jpg, jpeg, webp]
+
 content:
 - name: home
   label: Homepage & hero
@@ -227,6 +233,11 @@ content:
   path: content/founder.json
   format: json
   fields:
+  - name: portrait_image
+    label: Founder photograph
+    type: image
+    options:
+      extensions: [png, jpg, jpeg, webp]
   - name: quote_label
     label: Philosophy label
     type: string
@@ -341,6 +352,21 @@ content:
   path: content/brand.json
   format: json
   fields:
+  - name: header_logo
+    label: Header logo (K&A mark)
+    type: image
+    options:
+      extensions: [png, jpg, jpeg, webp]
+  - name: favicon_image
+    label: Browser tab icon (square)
+    type: image
+    options:
+      extensions: [png, jpg, jpeg, webp]
+  - name: social_preview_image
+    label: LinkedIn link preview image (1200 x 630 suggested)
+    type: image
+    options:
+      extensions: [png, jpg, jpeg, webp]
   - name: header_tagline
     label: Header tagline
     type: string
