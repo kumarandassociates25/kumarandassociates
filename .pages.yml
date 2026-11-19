@@ -1,0 +1,358 @@
+content:
+- name: home
+  label: Homepage & hero
+  type: file
+  path: content/home.json
+  format: json
+  fields:
+  - name: eyebrow
+    label: Eyebrow / audience
+    type: string
+  - name: heading_main
+    label: Hero heading first line
+    type: string
+  - name: heading_accent
+    label: Hero heading second line
+    type: string
+  - name: intro
+    label: Hero introduction
+    type: text
+  - name: primary_button
+    label: Main button
+    type: string
+  - name: secondary_button
+    label: Secondary button
+    type: string
+  - name: value_heading
+    label: Features heading
+    type: string
+  - name: feature_1_name
+    label: Feature 1 title
+    type: string
+  - name: feature_2_name
+    label: Feature 2 title
+    type: string
+  - name: feature_3_name
+    label: Feature 3 title
+    type: string
+  - name: feature_4_name
+    label: Feature 4 title
+    type: string
+  - name: feature_1_detail_heading
+    label: Feature 1 expanded heading
+    type: string
+  - name: feature_1_detail_body
+    label: Feature 1 expanded text
+    type: text
+  - name: feature_footer
+    label: Features footer
+    type: string
+  - name: trust_1
+    label: Trust point 1
+    type: string
+  - name: trust_2
+    label: Trust point 2
+    type: string
+  - name: trust_3
+    label: Trust point 3
+    type: string
+  - name: feature_2_detail_heading
+    label: Feature 2 expanded heading
+    type: string
+  - name: feature_3_detail_heading
+    label: Feature 3 expanded heading
+    type: string
+  - name: feature_4_detail_heading
+    label: Feature 4 expanded heading
+    type: string
+  - name: feature_2_detail_body
+    label: Feature 2 expanded text
+    type: text
+  - name: feature_3_detail_body
+    label: Feature 3 expanded text
+    type: text
+  - name: feature_4_detail_body
+    label: Feature 4 expanded text
+    type: text
+- name: approach
+  label: Our approach
+  type: file
+  path: content/approach.json
+  format: json
+  fields:
+  - name: eyebrow
+    label: Section eyebrow
+    type: string
+  - name: title
+    label: Section heading
+    type: string
+  - name: intro
+    label: Introduction
+    type: text
+  - name: pill
+    label: Highlighted statement
+    type: string
+  - name: point_1_title
+    label: Principle 1 heading
+    type: string
+  - name: point_1_body
+    label: Principle 1 description
+    type: text
+  - name: point_2_title
+    label: Principle 2 heading
+    type: string
+  - name: point_2_body
+    label: Principle 2 description
+    type: text
+  - name: point_3_title
+    label: Principle 3 heading
+    type: string
+  - name: point_3_body
+    label: Principle 3 description
+    type: text
+- name: services
+  label: Services
+  type: file
+  path: content/services.json
+  format: json
+  fields:
+  - name: eyebrow
+    label: Section eyebrow
+    type: string
+  - name: title
+    label: Section heading
+    type: string
+  - name: intro
+    label: Introduction
+    type: text
+  - name: insolvency_heading
+    label: Insolvency heading
+    type: string
+  - name: insolvency_intro
+    label: Insolvency description
+    type: text
+  - name: insolvency_item_1
+    label: Insolvency bullet 1
+    type: string
+  - name: insolvency_item_2
+    label: Insolvency bullet 2
+    type: string
+  - name: insolvency_item_3
+    label: Insolvency bullet 3
+    type: string
+  - name: insolvency_item_4
+    label: Insolvency bullet 4
+    type: string
+  - name: insolvency_item_5
+    label: Insolvency bullet 5
+    type: string
+  - name: accounting_heading
+    label: Accounting heading
+    type: string
+  - name: accounting_intro
+    label: Accounting description
+    type: text
+  - name: accounting_item_1
+    label: Accounting bullet 1
+    type: string
+  - name: accounting_item_2
+    label: Accounting bullet 2
+    type: string
+  - name: accounting_item_3
+    label: Accounting bullet 3
+    type: string
+  - name: accounting_item_4
+    label: Accounting bullet 4
+    type: string
+  - name: accounting_item_5
+    label: Accounting bullet 5
+    type: string
+  - name: accounting_item_6
+    label: Accounting bullet 6
+    type: string
+- name: engagements
+  label: How we work
+  type: file
+  path: content/engagements.json
+  format: json
+  fields:
+  - name: band_heading
+    label: Banner heading
+    type: text
+  - name: band_intro
+    label: Banner supporting text
+    type: text
+  - name: band_button
+    label: Banner button
+    type: string
+  - name: eyebrow
+    label: Section eyebrow
+    type: string
+  - name: title
+    label: Section heading
+    type: string
+  - name: model_1_heading
+    label: Option 1 heading
+    type: string
+  - name: model_1_body
+    label: Option 1 description
+    type: text
+  - name: model_1_tag
+    label: Option 1 label
+    type: string
+  - name: model_2_heading
+    label: Option 2 heading
+    type: string
+  - name: model_2_body
+    label: Option 2 description
+    type: text
+  - name: model_2_tag
+    label: Option 2 label
+    type: string
+  - name: model_3_heading
+    label: Option 3 heading
+    type: string
+  - name: model_3_body
+    label: Option 3 description
+    type: text
+  - name: model_3_tag
+    label: Option 3 label
+    type: string
+  - name: closing_note
+    label: Closing note
+    type: text
+- name: founder
+  label: About the founder
+  type: file
+  path: content/founder.json
+  format: json
+  fields:
+  - name: quote_label
+    label: Philosophy label
+    type: string
+  - name: quote
+    label: Working philosophy quote
+    type: text
+  - name: quote_footer
+    label: Philosophy footer
+    type: string
+  - name: eyebrow
+    label: Section eyebrow
+    type: string
+  - name: title
+    label: Founder heading
+    type: string
+  - name: bio_1
+    label: Biography paragraph 1
+    type: text
+  - name: bio_2
+    label: Biography paragraph 2
+    type: text
+  - name: credential_1
+    label: Background bullet 1
+    type: string
+  - name: credential_2
+    label: Background bullet 2
+    type: string
+  - name: credential_3
+    label: Background bullet 3
+    type: string
+  - name: button
+    label: Founder CTA
+    type: string
+- name: faq
+  label: Frequently asked questions
+  type: file
+  path: content/faq.json
+  format: json
+  fields:
+  - name: eyebrow
+    label: Section eyebrow
+    type: string
+  - name: title
+    label: Section heading
+    type: string
+  - name: q1
+    label: Question 1
+    type: string
+  - name: a1
+    label: Answer 1
+    type: text
+  - name: q2
+    label: Question 2
+    type: string
+  - name: a2
+    label: Answer 2
+    type: text
+  - name: q3
+    label: Question 3
+    type: string
+  - name: a3
+    label: Answer 3
+    type: text
+  - name: q4
+    label: Question 4
+    type: string
+  - name: a4
+    label: Answer 4
+    type: text
+  - name: q5
+    label: Question 5
+    type: string
+  - name: a5
+    label: Answer 5
+    type: text
+- name: contact
+  label: Contact & enquiry labels
+  type: file
+  path: content/contact.json
+  format: json
+  fields:
+  - name: eyebrow
+    label: Section eyebrow
+    type: string
+  - name: title
+    label: Section heading
+    type: string
+  - name: intro
+    label: Introduction
+    type: text
+  - name: phone
+    label: Phone number
+    type: string
+  - name: phone_link
+    label: Phone URL (tel:+...)
+    type: string
+  - name: email_link
+    label: Email link (mailto:...)
+    type: string
+  - name: linkedin_button
+    label: LinkedIn link label
+    type: string
+  - name: linkedin_url
+    label: LinkedIn profile URL
+    type: string
+  - name: submit_button
+    label: Enquiry button label
+    type: string
+- name: brand
+  label: Website title & SEO
+  type: file
+  path: content/brand.json
+  format: json
+  fields:
+  - name: header_tagline
+    label: Header tagline
+    type: string
+  - name: meta_title
+    label: Browser title
+    type: string
+  - name: meta_description
+    label: Search description
+    type: text
+  - name: social_title
+    label: Social preview title
+    type: string
+  - name: social_description
+    label: Social preview summary
+    type: text
