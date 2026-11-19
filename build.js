@@ -18,10 +18,12 @@ const capData = Array.from({length:4}, (_, i)=> [
 html=html.replace('%%KA_JS_CAPDATA%%',JSON.stringify(capData).replace(/</g,'\\u003c'));
 if(/%%KA:|%%KA_JS_CAPDATA%%/.test(html)) throw new Error('Unresolved content token');
 const out = path.join(root,'dist'); fs.mkdirSync(out,{recursive:true});
-for(const f of fs.readdirSync(path.join(root,'src'))){
-  if(f==='index.template.html') continue;
-  const fp=path.join(root,'src',f);
-  if(fs.statSync(fp).isFile()) fs.copyFileSync(fp,path.join(out,f));
+for (const entry of fs.readdirSync(path.join(root, 'src'), {withFileTypes:true})) {
+  if (entry.name === 'index.template.html') continue;
+  const from = path.join(root, 'src', entry.name);
+  const to = path.join(out, entry.name);
+  if (entry.isDirectory()) fs.cpSync(from, to, {recursive:true, force:true});
+  else if (entry.isFile()) fs.copyFileSync(from, to);
 }
 fs.writeFileSync(path.join(out,'index.html'),html,'utf8');
 console.log('Built Kumar & Associates website from Pages CMS content.');

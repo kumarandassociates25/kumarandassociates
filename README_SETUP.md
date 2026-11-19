@@ -43,3 +43,18 @@ Upload the `dist/` folder to your existing Netlify site via Deploys. The website
 - The Pages CMS editor is accessed at https://app.pagescms.org, not at a public `/admin` route on your site.
 - Hosting remains on Netlify and your `netlify.app` URL stays the same if you connect your existing project rather than creating a new one.
 - This CMS edits content; CSS/layout and logo file editing still require updates to the source.
+
+
+## Editing images from Pages CMS (new)
+
+After GitHub receives this updated repository and Netlify successfully deploys it:
+
+1. Open https://app.pagescms.org/ and open your repository.
+2. In **Website title & SEO**, use the **Header logo**, **Browser tab icon**, and **LinkedIn link preview image** selectors to upload/choose images.
+3. In **About the founder**, use **Founder photograph** to upload a new portrait.
+4. Save the entry and check Netlify's deploy status.
+5. When the deploy is published, refresh the website; for a social preview update, inspect the link with LinkedIn Post Inspector.
+
+Media files are saved under `src/media/` and published at `/media/...`.
+Keep branding mark images PNG/WebP with a clean background or transparency. For the LinkedIn preview use 1200×630 px (approximately 1.91:1).
+When changing the preview image, LinkedIn may retain a cached thumbnail until its Post Inspector refreshes it.
